@@ -41,7 +41,6 @@
     <div class="login-container">
         <h2 class="login-title">Log In</h2> <!-- Capitalized for consistency -->
 
-        <!-- Grouped username and password inputs with labels for accessibility -->
         <div class="input-group">
             <input id="input-username" type="text" placeholder="Username" aria-label="Username">
             <div id="unBox"></div>
