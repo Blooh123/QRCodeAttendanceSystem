@@ -435,6 +435,9 @@ input::placeholder {
     #logo {
         display: none;
     }
+    .bubble-container {
+        opacity: 0.5;
+    }
 
     #bubble-1 {
         left: 200px;
