@@ -58,7 +58,6 @@
         <script>
             document.getElementById("login-form").addEventListener("submit", function(e){
                 e.preventDefault();
-                window.location.href = "login.php";
                 const username = document.getElementById("input-username").value;
                 const password = document.getElementById("input-password").value;
 
