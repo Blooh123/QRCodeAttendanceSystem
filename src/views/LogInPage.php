@@ -8,14 +8,14 @@
     <title>Login | QR Code Attendance System</title>
 
     <!-- Consolidating favicon and styles for better maintainability -->
-    <link rel="icon" href="Images/USeP.png" />
-    <link rel="stylesheet" href="Styles/Sign-in.css" />
+    <link rel="icon" href="/Images/USeP.png" />
+    <link rel="stylesheet" href="/Styles/Sign-in.css" />
 </head>
 
 <body>
 <header>
     <div class="brand-container">
-        <img src="Images/USeP.png" width="316" alt="University Logo">
+        <img src="/Images/USeP.png" width="316" alt="University Logo">
         <h1 class="brand-title">QR Code Attendance System</h1> <!-- Changed to <h1> for semantic heading -->
     </div>
 </header>
@@ -23,7 +23,7 @@
 
 <!---mga bubbles-->
 <section class="bubble-container">
-    <img id="logo" src="Images/Logo.png" alt="Logo" />
+    <img id="logo" src="/Images/Logo.png" alt="Logo" />
     <div class="bubble" id="bubble-1"></div>
     <div class="bubble" id="bubble-2"></div>
     <div class="bubble" id="bubble-3"></div>
