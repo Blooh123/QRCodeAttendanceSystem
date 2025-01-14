@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,22 +37,40 @@
 <main>
     <div class="login-container">
         <h2 class="login-title">Log In</h2> <!-- Capitalized for consistency -->
+        <form id="login-form">
+            <div class="input-group">
+                <input id="input-username" type="text" placeholder="Username" aria-label="Username" required>
+                <div id="unBox"></div>
+            </div>
 
-        <div class="input-group">
-            <input id="input-username" type="text" placeholder="Username" aria-label="Username">
-            <div id="unBox"></div>
-        </div>
+            <div class="input-group">
+                <input id="input-password" type="password" placeholder="Password" aria-label="Password" required>
+                <div id="pwBox"></div>
+            </div>
 
-        <div class="input-group">
-            <input id="input-password" type="password" placeholder="Password" aria-label="Password">
-            <div id="pwBox"></div>
-        </div>
+            <!-- Grouped buttons for proper navigation -->
+            <div class="button-group">
+                <button id="btn-signIn" type="submit" class="btn">Log In</button>
+                <button id="btn-register" class="btn secondary">Register</button>
+            </div>
+        </form>
 
-        <!-- Grouped buttons for proper navigation -->
-        <div class="button-group">
-            <button id="btn-signIn" class="btn">Log In</button>
-            <button id="btn-register" class="btn secondary">Register</button>
-        </div>
+        <script>
+            document.getElementById("login-form").addEventListener("submit", function(e){
+                e.preventDefault();
+                window.location.href = "login.php";
+                const username = document.getElementById("input-username").value;
+                const password = document.getElementById("input-password").value;
+
+                if (username === "admin" && password === "Admin1234") {
+                    alert("Login Successful");
+                    window.location.href = "App/AdminHomePage.php";
+                }else {
+                    alert('Invalid username or password. Please try again.');
+                }
+            });
+        </script>
+
     </div>
 </main>
 </body>

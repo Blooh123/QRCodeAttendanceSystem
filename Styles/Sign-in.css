@@ -50,28 +50,27 @@ header {
 
 #unBox {
     position: relative;
-    top: -75px;
+    top: -70px;
     left: 5px;
 
     background-color: #A31D1D;
     width: 5px;
-    height: 75px;
+    height: 70px;
 }
 
 #pwBox {
     position: relative;
-    top: -115px;
+    top: -110px;
     left: 5px;
 
     background-color: #A31D1D;
     width: 5px;
-    height: 75px;
+    height: 70px;
 }
 
 
 #input-username {
     position: relative;
-    padding-top: 10px;
     padding-left: 10px;
     left: 20px;
     border: 2px solid black; /* Lighter border for clean aesthetics */
@@ -85,9 +84,8 @@ header {
 }
 
 
-#input-password {
+#input-password{
     position: relative;
-    padding-top: 10px;
     padding-left: 10px;
     left: 20px;
     top: -40px;
@@ -101,28 +99,6 @@ header {
     color: #333; /* Text color */
 }
 
-input::placeholder {
-    position: absolute;
-    font-family: Poppins, sans-serif;
-    color: black;
-    top: 15px;
-    left: 15px;
-    font-size: 15px;
-}
-#input-username:hover,
-#input-password:hover {
-    border-color: #666; /* Darker border on hover */
-}
-#input-username:focus,
-#input-password:focus {
-    border-color: #A31D1D; /* Highlighted border on focus */
-    box-shadow: 0 0 5px rgba(163, 29, 29, 0.6); /* Add focus glow effect */
-}
-#input-username::placeholder:focus,
-#input-password::placeholder:focus {
-    border-color: #A31D1D; /* Highlighted border on focus */
-    box-shadow: 0 0 5px rgba(163, 29, 29, 0.6); /* Add focus glow effect */
-}
 
 /* Add hover effects for #btn-signIn */
 #btn-signIn {
@@ -493,7 +469,10 @@ input::placeholder {
     #logo {
         display: none;
     }
+
 }
+
+
 
 
 
