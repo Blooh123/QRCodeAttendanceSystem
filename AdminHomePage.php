@@ -10,5 +10,6 @@
 </head>
 <body>
     <h1>Admin Home Page</h1>
+    <a href="index.php">Back to Home Page</a>
 </body>
 </html>
